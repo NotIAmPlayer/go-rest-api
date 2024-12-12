@@ -135,6 +135,7 @@ func main() {
 	r.GET("/meetings/:id", getMeetingByID)
 	r.POST("/meetings", postMeetings)
 	r.PUT("/meetings/:id", putMeeting)
+	r.DELETE("/meetings/:id", deleteMeeting)
 
 	r.Run("localhost:8080")
 }
