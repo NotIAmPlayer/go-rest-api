@@ -8,7 +8,7 @@ import (
 )
 
 type meeting struct {
-	ID          string   `json:"id"`
+	ID          int      `json:"id"`
 	MeetingFrom string   `json:"meeting_from"`
 	MeetingTo   []string `json:"meeting_to"`
 	Title       string   `json:"title"`
