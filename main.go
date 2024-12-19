@@ -68,7 +68,7 @@ func putMeeting(c *gin.Context) {
 				m.MeetingFrom = updatedMeeting.MeetingFrom
 			}
 
-			if len(updatedMeeting.MeetingTo) == 0 {
+			if len(updatedMeeting.MeetingTo) != 0 {
 				m.MeetingTo = updatedMeeting.MeetingTo
 			}
 
